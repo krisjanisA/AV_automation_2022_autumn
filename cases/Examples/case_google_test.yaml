@@ -1,0 +1,38 @@
+OpenChromeGoogle:
+  Roles:
+    - Role: desktopChrome
+      App: desktop
+  Actions:
+    - Type: navigate
+      Role: desktopChrome
+      Value: https://google.com
+    - Type: click
+      Strategy: css
+      Id: "#L2AGLb"
+    - Type: send_keys
+      Strategy: xpath
+      Id: "//input[@title=\"Search\"]"
+      Value: "TestRay"
+    - Type: click
+      Strategy: css
+      Id: "[class=\"FPdoLc lJ9FBc\"] input[aria-label=\"Google Search\"]"
+    - Type: sleep
+      Time: 10
+
+TestMyWebcam:
+  Roles:
+    - Role: desktopChrome
+      Capabilities:
+        chromeOptions:
+          args:
+            - use-fake-ui-for-media-stream
+            - use-fake-device-for-media-stream
+      App: desktop
+  Actions:
+    - Type: navigate
+      Value: https://webcamtests.com
+    - Type: click
+      Strategy: css
+      Id: "#webcam-launcher"
+    - Type: sleep
+      Time: 10

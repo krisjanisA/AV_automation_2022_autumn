@@ -1,0 +1,147 @@
+[DEBUG] [20221109-185728]: Found roles: ["desktopChrome", "desktopChrome1"]
+[INFO] [20221109-185728]: Starting creation and configuration of role handlers...
+[DEBUG] [20221109-185728]: Creating handler for case role 'desktopChrome'...
+[INFO] [20221109-185728]: Role 'desktopChrome': Adding capabilities from case: {"chromeOptions"=>{"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream"]}}
+[DEBUG] [20221109-185728]: Created handler for case role 'desktopChrome'
+[DEBUG] [20221109-185728]: Creating handler for case role 'desktopChrome1'...
+[INFO] [20221109-185728]: Role 'desktopChrome1': Adding capabilities from case: {"chromeOptions"=>{"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream"]}}
+[DEBUG] [20221109-185728]: Created handler for case role 'desktopChrome1'
+[INFO] [20221109-185728]: All role handlers created and fully configured!
+[INFO] [20221109-185728]: Chrome Options: {"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream"]}
+[INFO] [20221109-185730]: Chrome Options: {"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream"]}
+[INFO] [20221109-185732]: Starting main case OpenViduCall
+[DEBUG] [20221109-185732]: Case 'OpenViduCall': adding sequential action: 'navigate' for role desktopChrome,desktopChrome1
+[DEBUG] [20221109-185732]: Case 'OpenViduCall': adding sequential action: 'clear_field' for role desktopChrome,desktopChrome1
+[DEBUG] [20221109-185732]: Case 'OpenViduCall': adding sequential action: 'send_keys' for role desktopChrome
+[DEBUG] [20221109-185732]: Case 'OpenViduCall': adding sequential action: 'send_keys' for role desktopChrome1
+[DEBUG] [20221109-185732]: Case 'OpenViduCall': adding sequential action: 'clear_field' for role desktopChrome,desktopChrome1
+[DEBUG] [20221109-185732]: Case 'OpenViduCall': adding sequential action: 'send_keys' for role desktopChrome,desktopChrome1
+[DEBUG] [20221109-185732]: Case 'OpenViduCall': adding sequential action: 'click' for role desktopChrome,desktopChrome1
+[DEBUG] [20221109-185732]: Case 'OpenViduCall': adding sequential action: 'sleep' 
+[INFO] [20221109-185732]: Role: 'desktopChrome', Action: 'navigate', Value: 'https://demos.openvidu.io/basic-videoconference/'
+[INFO] [20221109-185735]: Role: 'desktopChrome1', Action: 'navigate', Value: 'https://demos.openvidu.io/basic-videoconference/'
+[INFO] [20221109-185738]: Role: 'desktopChrome', Action: 'clear_field', Element: 'css:#userName'
+[INFO] [20221109-185738]: Role: 'desktopChrome1', Action: 'clear_field', Element: 'css:#userName'
+[INFO] [20221109-185738]: Role: 'desktopChrome', Action: 'send_keys', Element: 'css:#userName', Value: 'Peteris'
+[INFO] [20221109-185738]: desktopChrome: Sending keys: Peteris
+[INFO] [20221109-185738]: Role: 'desktopChrome1', Action: 'send_keys', Element: 'css:#userName', Value: 'Anna'
+[INFO] [20221109-185738]: desktopChrome1: Sending keys: Anna
+[INFO] [20221109-185738]: Role: 'desktopChrome', Action: 'clear_field', Element: 'css:#sessionId'
+[INFO] [20221109-185738]: Role: 'desktopChrome1', Action: 'clear_field', Element: 'css:#sessionId'
+[INFO] [20221109-185738]: Role: 'desktopChrome', Action: 'send_keys', Element: 'css:#sessionId', Value: 'Testing AV'
+[INFO] [20221109-185738]: desktopChrome: Sending keys: Testing AV
+[INFO] [20221109-185739]: Role: 'desktopChrome1', Action: 'send_keys', Element: 'css:#sessionId', Value: 'Testing AV'
+[INFO] [20221109-185739]: desktopChrome1: Sending keys: Testing AV
+[INFO] [20221109-185739]: Role: 'desktopChrome', Action: 'click', Element: 'css:[value="Join!"]'
+[INFO] [20221109-185739]: Role: 'desktopChrome1', Action: 'click', Element: 'css:[value="Join!"]'
+[INFO] [20221109-185739]: Role: 'desktopChrome', Action: 'sleep', Time: '10'
+[INFO] [20221109-185749]: Role: 'desktopChrome1', Action: 'sleep', Time: '10'
+[INFO] [20221109-185759]: All cases have finished
+================================================================================
+[INFO] [20221109-185759]: Finished Case Execution for 'OpenViduCall'
+================================================================================
+[INFO] [20221109-185759]: Stopping Appium drivers and servers...
+[INFO] [20221109-185759]: Role 'desktopChrome': Stopping Selenium driver... 
+Done!
+
+[INFO] [20221109-185759]: Role 'desktopChrome1': Stopping Selenium driver... 
+Done!
+
+[DEBUG] [20221109-185919]: Found roles: ["desktopChrome", "desktopChrome1"]
+[INFO] [20221109-185919]: Starting creation and configuration of role handlers...
+[DEBUG] [20221109-185919]: Creating handler for case role 'desktopChrome'...
+[INFO] [20221109-185919]: Role 'desktopChrome': Adding capabilities from case: {"chromeOptions"=>{"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream"]}}
+[DEBUG] [20221109-185919]: Created handler for case role 'desktopChrome'
+[DEBUG] [20221109-185919]: Creating handler for case role 'desktopChrome1'...
+[INFO] [20221109-185919]: Role 'desktopChrome1': Adding capabilities from case: {"chromeOptions"=>{"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream"]}}
+[DEBUG] [20221109-185919]: Created handler for case role 'desktopChrome1'
+[INFO] [20221109-185919]: All role handlers created and fully configured!
+[INFO] [20221109-185919]: Chrome Options: {"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream"]}
+[INFO] [20221109-185921]: Chrome Options: {"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream"]}
+[INFO] [20221109-185923]: Starting main case OpenViduCall
+[DEBUG] [20221109-185924]: Case 'OpenViduCall': adding sequential action: 'navigate' for role desktopChrome,desktopChrome1
+[DEBUG] [20221109-185924]: Case 'OpenViduCall': adding sequential action: 'clear_field' for role desktopChrome,desktopChrome1
+[DEBUG] [20221109-185924]: Case 'OpenViduCall': adding sequential action: 'send_keys' for role desktopChrome
+[DEBUG] [20221109-185924]: Case 'OpenViduCall': adding sequential action: 'send_keys' for role desktopChrome1
+[DEBUG] [20221109-185924]: Case 'OpenViduCall': adding sequential action: 'clear_field' for role desktopChrome,desktopChrome1
+[DEBUG] [20221109-185924]: Case 'OpenViduCall': adding sequential action: 'send_keys' for role desktopChrome,desktopChrome1
+[DEBUG] [20221109-185924]: Case 'OpenViduCall': adding sequential action: 'click' for role desktopChrome,desktopChrome1
+[DEBUG] [20221109-185924]: Case 'OpenViduCall': adding sequential action: 'sleep' 
+[INFO] [20221109-185924]: Role: 'desktopChrome', Action: 'navigate', Value: 'https://demos.openvidu.io/basic-videoconference/'
+[INFO] [20221109-185926]: Role: 'desktopChrome1', Action: 'navigate', Value: 'https://demos.openvidu.io/basic-videoconference/'
+[INFO] [20221109-185928]: Role: 'desktopChrome', Action: 'clear_field', Element: 'css:#userName'
+[INFO] [20221109-185928]: Role: 'desktopChrome1', Action: 'clear_field', Element: 'css:#userName'
+[INFO] [20221109-185928]: Role: 'desktopChrome', Action: 'send_keys', Element: 'css:#userName', Value: 'Peteris'
+[INFO] [20221109-185928]: desktopChrome: Sending keys: Peteris
+[INFO] [20221109-185928]: Role: 'desktopChrome1', Action: 'send_keys', Element: 'css:#userName', Value: 'Anna'
+[INFO] [20221109-185928]: desktopChrome1: Sending keys: Anna
+[INFO] [20221109-185928]: Role: 'desktopChrome', Action: 'clear_field', Element: 'css:#sessionId'
+[INFO] [20221109-185929]: Role: 'desktopChrome1', Action: 'clear_field', Element: 'css:#sessionId'
+[INFO] [20221109-185929]: Role: 'desktopChrome', Action: 'send_keys', Element: 'css:#sessionId', Value: 'Testing AV 1000'
+[INFO] [20221109-185929]: desktopChrome: Sending keys: Testing AV 1000
+[INFO] [20221109-185929]: Role: 'desktopChrome1', Action: 'send_keys', Element: 'css:#sessionId', Value: 'Testing AV 1000'
+[INFO] [20221109-185929]: desktopChrome1: Sending keys: Testing AV 1000
+[INFO] [20221109-185929]: Role: 'desktopChrome', Action: 'click', Element: 'css:[value="Join!"]'
+[INFO] [20221109-185929]: Role: 'desktopChrome1', Action: 'click', Element: 'css:[value="Join!"]'
+[INFO] [20221109-185929]: Role: 'desktopChrome', Action: 'sleep', Time: '10'
+[INFO] [20221109-185939]: Role: 'desktopChrome1', Action: 'sleep', Time: '10'
+[INFO] [20221109-185949]: All cases have finished
+================================================================================
+[INFO] [20221109-185949]: Finished Case Execution for 'OpenViduCall'
+================================================================================
+[INFO] [20221109-185949]: Stopping Appium drivers and servers...
+[INFO] [20221109-185949]: Role 'desktopChrome': Stopping Selenium driver... 
+Done!
+
+[INFO] [20221109-185950]: Role 'desktopChrome1': Stopping Selenium driver... 
+Done!
+
+[DEBUG] [20221109-185959]: Found roles: ["desktopChrome", "desktopChrome1"]
+[INFO] [20221109-185959]: Starting creation and configuration of role handlers...
+[DEBUG] [20221109-185959]: Creating handler for case role 'desktopChrome'...
+[INFO] [20221109-185959]: Role 'desktopChrome': Adding capabilities from case: {"chromeOptions"=>{"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream"]}}
+[DEBUG] [20221109-185959]: Created handler for case role 'desktopChrome'
+[DEBUG] [20221109-185959]: Creating handler for case role 'desktopChrome1'...
+[INFO] [20221109-185959]: Role 'desktopChrome1': Adding capabilities from case: {"chromeOptions"=>{"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream"]}}
+[DEBUG] [20221109-185959]: Created handler for case role 'desktopChrome1'
+[INFO] [20221109-185959]: All role handlers created and fully configured!
+[INFO] [20221109-185959]: Chrome Options: {"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream"]}
+[INFO] [20221109-190001]: Chrome Options: {"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream"]}
+[INFO] [20221109-190003]: Starting main case OpenViduCall
+[DEBUG] [20221109-190003]: Case 'OpenViduCall': adding sequential action: 'navigate' for role desktopChrome,desktopChrome1
+[DEBUG] [20221109-190003]: Case 'OpenViduCall': adding sequential action: 'clear_field' for role desktopChrome,desktopChrome1
+[DEBUG] [20221109-190003]: Case 'OpenViduCall': adding sequential action: 'send_keys' for role desktopChrome
+[DEBUG] [20221109-190003]: Case 'OpenViduCall': adding sequential action: 'send_keys' for role desktopChrome1
+[DEBUG] [20221109-190003]: Case 'OpenViduCall': adding sequential action: 'clear_field' for role desktopChrome,desktopChrome1
+[DEBUG] [20221109-190003]: Case 'OpenViduCall': adding sequential action: 'send_keys' for role desktopChrome,desktopChrome1
+[DEBUG] [20221109-190003]: Case 'OpenViduCall': adding sequential action: 'click' for role desktopChrome,desktopChrome1
+[DEBUG] [20221109-190003]: Case 'OpenViduCall': adding sequential action: 'sleep' 
+[INFO] [20221109-190003]: Role: 'desktopChrome', Action: 'navigate', Value: 'https://demos.openvidu.io/basic-videoconference/'
+[INFO] [20221109-190006]: Role: 'desktopChrome1', Action: 'navigate', Value: 'https://demos.openvidu.io/basic-videoconference/'
+[INFO] [20221109-190009]: Role: 'desktopChrome', Action: 'clear_field', Element: 'css:#userName'
+[INFO] [20221109-190009]: Role: 'desktopChrome1', Action: 'clear_field', Element: 'css:#userName'
+[INFO] [20221109-190009]: Role: 'desktopChrome', Action: 'send_keys', Element: 'css:#userName', Value: 'Peteris'
+[INFO] [20221109-190009]: desktopChrome: Sending keys: Peteris
+[INFO] [20221109-190009]: Role: 'desktopChrome1', Action: 'send_keys', Element: 'css:#userName', Value: 'Anna'
+[INFO] [20221109-190009]: desktopChrome1: Sending keys: Anna
+[INFO] [20221109-190009]: Role: 'desktopChrome', Action: 'clear_field', Element: 'css:#sessionId'
+[INFO] [20221109-190009]: Role: 'desktopChrome1', Action: 'clear_field', Element: 'css:#sessionId'
+[INFO] [20221109-190009]: Role: 'desktopChrome', Action: 'send_keys', Element: 'css:#sessionId', Value: 'TestingAV1000'
+[INFO] [20221109-190009]: desktopChrome: Sending keys: TestingAV1000
+[INFO] [20221109-190009]: Role: 'desktopChrome1', Action: 'send_keys', Element: 'css:#sessionId', Value: 'TestingAV1000'
+[INFO] [20221109-190009]: desktopChrome1: Sending keys: TestingAV1000
+[INFO] [20221109-190009]: Role: 'desktopChrome', Action: 'click', Element: 'css:[value="Join!"]'
+[INFO] [20221109-190010]: Role: 'desktopChrome1', Action: 'click', Element: 'css:[value="Join!"]'
+[INFO] [20221109-190010]: Role: 'desktopChrome', Action: 'sleep', Time: '10'
+[INFO] [20221109-190020]: Role: 'desktopChrome1', Action: 'sleep', Time: '10'
+[INFO] [20221109-190030]: All cases have finished
+================================================================================
+[INFO] [20221109-190030]: Finished Case Execution for 'OpenViduCall'
+================================================================================
+[INFO] [20221109-190030]: Stopping Appium drivers and servers...
+[INFO] [20221109-190030]: Role 'desktopChrome': Stopping Selenium driver... 
+Done!
+
+[INFO] [20221109-190030]: Role 'desktopChrome1': Stopping Selenium driver... 
+Done!
+

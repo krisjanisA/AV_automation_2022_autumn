@@ -1,0 +1,44 @@
+OpenViduCall:
+  Roles:
+    - Role: desktopChrome,desktopChrome1
+      Capabilities:
+        chromeOptions:
+          args:
+            - use-fake-ui-for-media-stream
+            - use-fake-device-for-media-stream
+      App: desktop
+  Actions:
+    - Type: navigate
+      Role: desktopChrome,desktopChrome1
+      Value: "https://demos.openvidu.io/basic-videoconference/"
+    - Type: clear_field
+      Role: desktopChrome,desktopChrome1
+      Strategy: css
+      Id: "#userName"
+    - Type: send_keys
+      Role: desktopChrome
+      Strategy: css
+      Id: "#userName"
+      Value: "Peteris"
+    - Type: send_keys
+      Role: desktopChrome1
+      Strategy: css
+      Id: "#userName"
+      Value: "Anna"
+    - Type: clear_field
+      Role: desktopChrome,desktopChrome1
+      Strategy: css
+      Id: "#sessionId"
+    - Type: send_keys
+      Role: desktopChrome,desktopChrome1
+      Strategy: css
+      Id: "#sessionId"
+      Value: "TestingAV1000"
+    - Type: click
+      Role: desktopChrome,desktopChrome1
+      Strategy: css
+      Id: "[value=\"Join!\"]"
+    - Type: sleep
+      Time: 10
+    
+    

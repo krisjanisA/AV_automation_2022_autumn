@@ -1,0 +1,22 @@
+[DEBUG] [20221109-182852]: Found roles: ["desktopChrome"]
+[INFO] [20221109-182852]: Starting creation and configuration of role handlers...
+[DEBUG] [20221109-182852]: Creating handler for case role 'desktopChrome'...
+[INFO] [20221109-182852]: Role 'desktopChrome': Adding capabilities from case: {"chromeOptions"=>{"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream"]}}
+[DEBUG] [20221109-182852]: Created handler for case role 'desktopChrome'
+[INFO] [20221109-182852]: All role handlers created and fully configured!
+[INFO] [20221109-182852]: Chrome Options: {"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream"]}
+[INFO] [20221109-182854]: Starting main case TestMyWebcam
+[DEBUG] [20221109-182854]: Case 'TestMyWebcam': adding sequential action: 'navigate' 
+[DEBUG] [20221109-182854]: Case 'TestMyWebcam': adding sequential action: 'click' 
+[DEBUG] [20221109-182854]: Case 'TestMyWebcam': adding sequential action: 'sleep' 
+[INFO] [20221109-182854]: Role: 'desktopChrome', Action: 'navigate', Value: 'https://webcamtests.com'
+[INFO] [20221109-182858]: Role: 'desktopChrome', Action: 'click', Element: 'css:#webcam-launcher'
+[INFO] [20221109-182859]: Role: 'desktopChrome', Action: 'sleep', Time: '10'
+[INFO] [20221109-182909]: All cases have finished
+================================================================================
+[INFO] [20221109-182909]: Finished Case Execution for 'TestMyWebcam'
+================================================================================
+[INFO] [20221109-182909]: Stopping Appium drivers and servers...
+[INFO] [20221109-182909]: Role 'desktopChrome': Stopping Selenium driver... 
+Done!
+
