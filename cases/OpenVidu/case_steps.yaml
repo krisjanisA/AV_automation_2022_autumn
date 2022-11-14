@@ -1,0 +1,22 @@
+JoinOpenViduCall:
+  Step: I join to the call
+  Actions:
+    - Type: navigate
+      Value: "https://demos.openvidu.io/basic-videoconference/"
+    - Type: clear_field
+      Strategy: css
+      Id: "#userName"
+    - Type: send_keys
+      Strategy: css
+      Id: "#userName"
+      Value: $AND_CLI_USERNAME$
+    - Type: clear_field
+      Strategy: css
+      Id: "#sessionId"
+    - Type: send_keys
+      Strategy: css
+      Id: "#sessionId"
+      Value: $AND_CLI_SESSION$
+    - Type: click
+      Strategy: css
+      Id: "[value=\"Join!\"]"

@@ -1,44 +1,47 @@
 OpenViduCall:
+  Vars:
+    SESSION: "OurMeeting123"
+    USER1: "Peteris"
+    USER2: "Anna"
+    USER3: "Amigos"
   Roles:
-    - Role: desktopChrome,desktopChrome1
+    - Role: desktopChrome
       Capabilities:
         chromeOptions:
           args:
             - use-fake-ui-for-media-stream
             - use-fake-device-for-media-stream
+            - no-sandbox
+            - use-file-for-fake-audio-capture=$AND_CMD_pwd$/call.wav
+            - use-file-for-fake-video-capture=$AND_CMD_pwd$/output.mjpeg
+      App: desktop
+    - Role: desktopChrome1,desktopChrome2
+      Capabilities:
+        chromeOptions:
+          args:
+            - use-fake-ui-for-media-stream
+            - use-fake-device-for-media-stream
+            - use-file-for-fake-audio-capture=/Users/call.wav
       App: desktop
   Actions:
-    - Type: navigate
-      Role: desktopChrome,desktopChrome1
-      Value: "https://demos.openvidu.io/basic-videoconference/"
-    - Type: clear_field
-      Role: desktopChrome,desktopChrome1
-      Strategy: css
-      Id: "#userName"
-    - Type: send_keys
+    - When: I join to the call
       Role: desktopChrome
-      Strategy: css
-      Id: "#userName"
-      Value: "Peteris"
-    - Type: send_keys
+      Vars:
+        USERNAME: $AND_CLI_USER1$
+    - And: I join to the call
       Role: desktopChrome1
-      Strategy: css
-      Id: "#userName"
-      Value: "Anna"
-    - Type: clear_field
-      Role: desktopChrome,desktopChrome1
-      Strategy: css
-      Id: "#sessionId"
-    - Type: send_keys
-      Role: desktopChrome,desktopChrome1
-      Strategy: css
-      Id: "#sessionId"
-      Value: "TestingAV1000"
-    - Type: click
-      Role: desktopChrome,desktopChrome1
-      Strategy: css
-      Id: "[value=\"Join!\"]"
+      Vars:
+        USERNAME: $AND_CLI_USER2$
+    - And: I join to the call
+      Role: desktopChrome2
+      Vars:
+        USERNAME: $AND_CLI_USER3$
+    - Type: maximize
+      Role: desktopChrome
+    - Type: minimize
+      Role: desktopChrome1,desktopChrome2
     - Type: sleep
       Time: 10
+
     
     

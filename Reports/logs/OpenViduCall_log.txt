@@ -145,3 +145,724 @@ Done!
 [INFO] [20221109-190030]: Role 'desktopChrome1': Stopping Selenium driver... 
 Done!
 
+[DEBUG] [20221114-181706]: Found roles: ["desktopChrome", "desktopChrome1"]
+[INFO] [20221114-181706]: Starting creation and configuration of role handlers...
+[DEBUG] [20221114-181706]: Creating handler for case role 'desktopChrome'...
+[INFO] [20221114-181706]: Role 'desktopChrome': Adding capabilities from case: {"chromeOptions"=>{"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream"]}}
+[DEBUG] [20221114-181706]: Created handler for case role 'desktopChrome'
+[DEBUG] [20221114-181706]: Creating handler for case role 'desktopChrome1'...
+[INFO] [20221114-181706]: Role 'desktopChrome1': Adding capabilities from case: {"chromeOptions"=>{"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream"]}}
+[DEBUG] [20221114-181706]: Created handler for case role 'desktopChrome1'
+[INFO] [20221114-181706]: All role handlers created and fully configured!
+[INFO] [20221114-181706]: Chrome Options: {"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream"]}
+[INFO] [20221114-181709]: Chrome Options: {"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream"]}
+[INFO] [20221114-181712]: Starting main case OpenViduCall
+[DEBUG] [20221114-181712]: Case 'OpenViduCall': adding case 'I join to the call' for role desktopChrome
+[DEBUG] [20221114-181712]: Adding var: USERNAME = Peteris
+[DEBUG] [20221114-181712]: Case 'I join to the call': adding sequential action: 'navigate' 
+[DEBUG] [20221114-181712]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-181712]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-181712]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-181712]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-181712]: Case 'I join to the call': adding sequential action: 'click' 
+[INFO] [20221114-181712]: Role: 'desktopChrome', Action: 'navigate', Value: 'https://demos.openvidu.io/basic-videoconference/'
+[INFO] [20221114-181716]: Role: 'desktopChrome', Action: 'clear_field', Element: 'css:#userName'
+[INFO] [20221114-181716]: Role: 'desktopChrome', Action: 'send_keys', Element: 'css:#userName', Value: 'Peteris'
+[INFO] [20221114-181716]: desktopChrome: Sending keys: $AND_CLI_USERNAME$
+[INFO] [20221114-181716]: Role: 'desktopChrome', Action: 'clear_field', Element: 'css:#sessionId'
+[INFO] [20221114-181716]: Role: 'desktopChrome', Action: 'send_keys', Element: 'css:#sessionId', Value: 'TestingAV1000'
+[INFO] [20221114-181716]: desktopChrome: Sending keys: TestingAV1000
+[INFO] [20221114-181717]: Role: 'desktopChrome', Action: 'click', Element: 'css:[value="Join!"]'
+[INFO] [20221114-181717]: Finished case I join to the call, resuming parent case OpenViduCall
+When I join to the call
+[DEBUG] [20221114-181717]: Case 'OpenViduCall': adding case 'I join to the call' for role desktopChrome1
+[DEBUG] [20221114-181717]: Adding var: USERNAME = Anna
+[DEBUG] [20221114-181717]: Case 'I join to the call': adding sequential action: 'navigate' 
+[DEBUG] [20221114-181717]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-181717]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-181717]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-181717]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-181717]: Case 'I join to the call': adding sequential action: 'click' 
+[INFO] [20221114-181717]: Role: 'desktopChrome1', Action: 'navigate', Value: 'https://demos.openvidu.io/basic-videoconference/'
+[INFO] [20221114-181719]: Role: 'desktopChrome1', Action: 'clear_field', Element: 'css:#userName'
+[INFO] [20221114-181719]: Role: 'desktopChrome1', Action: 'send_keys', Element: 'css:#userName', Value: 'Anna'
+[INFO] [20221114-181719]: desktopChrome1: Sending keys: $AND_CLI_USERNAME$
+[INFO] [20221114-181720]: Role: 'desktopChrome1', Action: 'clear_field', Element: 'css:#sessionId'
+[INFO] [20221114-181720]: Role: 'desktopChrome1', Action: 'send_keys', Element: 'css:#sessionId', Value: 'TestingAV1000'
+[INFO] [20221114-181720]: desktopChrome1: Sending keys: TestingAV1000
+[INFO] [20221114-181720]: Role: 'desktopChrome1', Action: 'click', Element: 'css:[value="Join!"]'
+[INFO] [20221114-181720]: Finished case I join to the call, resuming parent case OpenViduCall
+And I join to the call
+[DEBUG] [20221114-181720]: Case 'OpenViduCall': adding sequential action: 'sleep' 
+[INFO] [20221114-181720]: Role: 'desktopChrome', Action: 'sleep', Time: '10'
+[INFO] [20221114-181730]: Role: 'desktopChrome1', Action: 'sleep', Time: '10'
+[INFO] [20221114-181740]: All cases have finished
+================================================================================
+[INFO] [20221114-181740]: Finished Case Execution for 'OpenViduCall'
+================================================================================
+[INFO] [20221114-181740]: Stopping Appium drivers and servers...
+[INFO] [20221114-181740]: Role 'desktopChrome': Stopping Selenium driver... 
+Done!
+
+[INFO] [20221114-181740]: Role 'desktopChrome1': Stopping Selenium driver... 
+Done!
+
+[DEBUG] [20221114-183211]: Found roles: ["desktopChrome", "desktopChrome1"]
+[INFO] [20221114-183211]: Starting creation and configuration of role handlers...
+[DEBUG] [20221114-183211]: Creating handler for case role 'desktopChrome'...
+[INFO] [20221114-183211]: Role 'desktopChrome': Adding capabilities from case: {"chromeOptions"=>{"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream"]}}
+[DEBUG] [20221114-183211]: Created handler for case role 'desktopChrome'
+[DEBUG] [20221114-183211]: Creating handler for case role 'desktopChrome1'...
+[INFO] [20221114-183211]: Role 'desktopChrome1': Adding capabilities from case: {"chromeOptions"=>{"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream"]}}
+[DEBUG] [20221114-183211]: Created handler for case role 'desktopChrome1'
+[INFO] [20221114-183211]: All role handlers created and fully configured!
+[INFO] [20221114-183211]: Chrome Options: {"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream"]}
+[INFO] [20221114-183213]: Chrome Options: {"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream"]}
+[INFO] [20221114-183217]: Starting main case OpenViduCall
+[DEBUG] [20221114-183217]: Case 'OpenViduCall': adding case 'I join to the call' for role desktopChrome
+[DEBUG] [20221114-183217]: Adding var: USERNAME = Peteris
+[DEBUG] [20221114-183217]: Case 'I join to the call': adding sequential action: 'navigate' 
+[DEBUG] [20221114-183217]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-183217]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-183217]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-183217]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-183217]: Case 'I join to the call': adding sequential action: 'click' 
+[INFO] [20221114-183217]: Role: 'desktopChrome', Action: 'navigate', Value: 'https://demos.openvidu.io/basic-videoconference/'
+[INFO] [20221114-183220]: Role: 'desktopChrome', Action: 'clear_field', Element: 'css:#userName'
+[INFO] [20221114-183220]: Role: 'desktopChrome', Action: 'send_keys', Element: 'css:#userName', Value: 'Peteris'
+[INFO] [20221114-183220]: desktopChrome: Sending keys: $AND_CLI_USERNAME$
+[INFO] [20221114-183220]: Role: 'desktopChrome', Action: 'clear_field', Element: 'css:#sessionId'
+[INFO] [20221114-183220]: Role: 'desktopChrome', Action: 'send_keys', Element: 'css:#sessionId', Value: 'OurMeeting123'
+[INFO] [20221114-183220]: desktopChrome: Sending keys: $AND_CLI_SESSION$
+[INFO] [20221114-183220]: Role: 'desktopChrome', Action: 'click', Element: 'css:[value="Join!"]'
+[INFO] [20221114-183221]: Finished case I join to the call, resuming parent case OpenViduCall
+When I join to the call
+[DEBUG] [20221114-183221]: Case 'OpenViduCall': adding case 'I join to the call' for role desktopChrome1
+[DEBUG] [20221114-183221]: Adding var: USERNAME = Anna
+[DEBUG] [20221114-183221]: Case 'I join to the call': adding sequential action: 'navigate' 
+[DEBUG] [20221114-183221]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-183221]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-183221]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-183221]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-183221]: Case 'I join to the call': adding sequential action: 'click' 
+[INFO] [20221114-183221]: Role: 'desktopChrome1', Action: 'navigate', Value: 'https://demos.openvidu.io/basic-videoconference/'
+[INFO] [20221114-183223]: Role: 'desktopChrome1', Action: 'clear_field', Element: 'css:#userName'
+[INFO] [20221114-183223]: Role: 'desktopChrome1', Action: 'send_keys', Element: 'css:#userName', Value: 'Anna'
+[INFO] [20221114-183223]: desktopChrome1: Sending keys: $AND_CLI_USERNAME$
+[INFO] [20221114-183223]: Role: 'desktopChrome1', Action: 'clear_field', Element: 'css:#sessionId'
+[INFO] [20221114-183223]: Role: 'desktopChrome1', Action: 'send_keys', Element: 'css:#sessionId', Value: 'OurMeeting123'
+[INFO] [20221114-183223]: desktopChrome1: Sending keys: $AND_CLI_SESSION$
+[INFO] [20221114-183223]: Role: 'desktopChrome1', Action: 'click', Element: 'css:[value="Join!"]'
+[INFO] [20221114-183223]: Finished case I join to the call, resuming parent case OpenViduCall
+And I join to the call
+[DEBUG] [20221114-183223]: Case 'OpenViduCall': adding sequential action: 'sleep' 
+[INFO] [20221114-183223]: Role: 'desktopChrome', Action: 'sleep', Time: '10'
+[INFO] [20221114-183233]: Role: 'desktopChrome1', Action: 'sleep', Time: '10'
+[INFO] [20221114-183243]: All cases have finished
+================================================================================
+[INFO] [20221114-183243]: Finished Case Execution for 'OpenViduCall'
+================================================================================
+[INFO] [20221114-183243]: Stopping Appium drivers and servers...
+[INFO] [20221114-183243]: Role 'desktopChrome': Stopping Selenium driver... 
+Done!
+
+[INFO] [20221114-183244]: Role 'desktopChrome1': Stopping Selenium driver... 
+Done!
+
+[DEBUG] [20221114-184002]: Found roles: ["desktopChrome", "desktopChrome1"]
+[INFO] [20221114-184002]: Starting creation and configuration of role handlers...
+[DEBUG] [20221114-184002]: Creating handler for case role 'desktopChrome'...
+[INFO] [20221114-184002]: Role 'desktopChrome': Adding capabilities from case: {"chromeOptions"=>{"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "use-file-for-fake-audio-capture=/Users/krisjanisalbergs/Desktop/AV_automation_2022_autumn/AV_junior_albergs/call.wav", "use-file-for-fake-video-capture=/Users/krisjanisalbergs/Desktop/AV_automation_2022_autumn/AV_junior_albergs/output.mjpeg"]}}
+[DEBUG] [20221114-184002]: Created handler for case role 'desktopChrome'
+[DEBUG] [20221114-184002]: Creating handler for case role 'desktopChrome1'...
+[INFO] [20221114-184002]: Role 'desktopChrome1': Adding capabilities from case: {"chromeOptions"=>{"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "use-file-for-fake-audio-capture=/Users/call.wav"]}}
+[DEBUG] [20221114-184002]: Created handler for case role 'desktopChrome1'
+[INFO] [20221114-184002]: All role handlers created and fully configured!
+[INFO] [20221114-184002]: Chrome Options: {"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "use-file-for-fake-audio-capture=/Users/krisjanisalbergs/Desktop/AV_automation_2022_autumn/AV_junior_albergs/call.wav", "use-file-for-fake-video-capture=/Users/krisjanisalbergs/Desktop/AV_automation_2022_autumn/AV_junior_albergs/output.mjpeg"]}
+[INFO] [20221114-184004]: Chrome Options: {"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "use-file-for-fake-audio-capture=/Users/call.wav"]}
+[INFO] [20221114-184006]: Starting main case OpenViduCall
+[DEBUG] [20221114-184006]: Case 'OpenViduCall': adding case 'I join to the call' for role desktopChrome
+[DEBUG] [20221114-184006]: Adding var: USERNAME = Peteris
+[DEBUG] [20221114-184006]: Case 'I join to the call': adding sequential action: 'navigate' 
+[DEBUG] [20221114-184006]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-184006]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-184006]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-184006]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-184006]: Case 'I join to the call': adding sequential action: 'click' 
+[INFO] [20221114-184006]: Role: 'desktopChrome', Action: 'navigate', Value: 'https://demos.openvidu.io/basic-videoconference/'
+[INFO] [20221114-184009]: Role: 'desktopChrome', Action: 'clear_field', Element: 'css:#userName'
+[INFO] [20221114-184009]: Role: 'desktopChrome', Action: 'send_keys', Element: 'css:#userName', Value: 'Peteris'
+[INFO] [20221114-184009]: desktopChrome: Sending keys: $AND_CLI_USERNAME$
+[INFO] [20221114-184009]: Role: 'desktopChrome', Action: 'clear_field', Element: 'css:#sessionId'
+[INFO] [20221114-184009]: Role: 'desktopChrome', Action: 'send_keys', Element: 'css:#sessionId', Value: 'OurMeeting123'
+[INFO] [20221114-184009]: desktopChrome: Sending keys: $AND_CLI_SESSION$
+[INFO] [20221114-184009]: Role: 'desktopChrome', Action: 'click', Element: 'css:[value="Join!"]'
+[INFO] [20221114-184009]: Finished case I join to the call, resuming parent case OpenViduCall
+When I join to the call
+[DEBUG] [20221114-184009]: Case 'OpenViduCall': adding case 'I join to the call' for role desktopChrome1
+[DEBUG] [20221114-184009]: Adding var: USERNAME = Anna
+[DEBUG] [20221114-184009]: Case 'I join to the call': adding sequential action: 'navigate' 
+[DEBUG] [20221114-184009]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-184009]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-184009]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-184009]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-184009]: Case 'I join to the call': adding sequential action: 'click' 
+[INFO] [20221114-184009]: Role: 'desktopChrome1', Action: 'navigate', Value: 'https://demos.openvidu.io/basic-videoconference/'
+[INFO] [20221114-184012]: Role: 'desktopChrome1', Action: 'clear_field', Element: 'css:#userName'
+[INFO] [20221114-184012]: Role: 'desktopChrome1', Action: 'send_keys', Element: 'css:#userName', Value: 'Anna'
+[INFO] [20221114-184012]: desktopChrome1: Sending keys: $AND_CLI_USERNAME$
+[INFO] [20221114-184012]: Role: 'desktopChrome1', Action: 'clear_field', Element: 'css:#sessionId'
+[INFO] [20221114-184012]: Role: 'desktopChrome1', Action: 'send_keys', Element: 'css:#sessionId', Value: 'OurMeeting123'
+[INFO] [20221114-184012]: desktopChrome1: Sending keys: $AND_CLI_SESSION$
+[INFO] [20221114-184012]: Role: 'desktopChrome1', Action: 'click', Element: 'css:[value="Join!"]'
+[INFO] [20221114-184012]: Finished case I join to the call, resuming parent case OpenViduCall
+And I join to the call
+[DEBUG] [20221114-184012]: Case 'OpenViduCall': adding sequential action: 'sleep' 
+[INFO] [20221114-184012]: Role: 'desktopChrome', Action: 'sleep', Time: '10'
+[INFO] [20221114-184022]: All cases have finished
+================================================================================
+[INFO] [20221114-184022]: Finished Case Execution for 'OpenViduCall'
+================================================================================
+[INFO] [20221114-184022]: Stopping Appium drivers and servers...
+[INFO] [20221114-184022]: Role 'desktopChrome': Stopping Selenium driver... 
+Done!
+
+[INFO] [20221114-184023]: Role 'desktopChrome1': Stopping Selenium driver... 
+Done!
+
+[DEBUG] [20221114-184320]: Found roles: ["desktopChrome", "desktopChrome1"]
+[INFO] [20221114-184320]: Starting creation and configuration of role handlers...
+[DEBUG] [20221114-184320]: Creating handler for case role 'desktopChrome'...
+[INFO] [20221114-184320]: Role 'desktopChrome': Adding capabilities from case: {"chromeOptions"=>{"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "use-file-for-fake-audio-capture=/Users/krisjanisalbergs/Desktop/AV_course/AVCourse/call.wav", "use-file-for-fake-video-capture=/Users/krisjanisalbergs/Desktop/AV_automation_2022_autumn/AV_junior_albergs/output.mjpeg"]}}
+[DEBUG] [20221114-184320]: Created handler for case role 'desktopChrome'
+[DEBUG] [20221114-184320]: Creating handler for case role 'desktopChrome1'...
+[INFO] [20221114-184320]: Role 'desktopChrome1': Adding capabilities from case: {"chromeOptions"=>{"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "use-file-for-fake-audio-capture=/Users/call.wav"]}}
+[DEBUG] [20221114-184320]: Created handler for case role 'desktopChrome1'
+[INFO] [20221114-184320]: All role handlers created and fully configured!
+[INFO] [20221114-184320]: Chrome Options: {"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "use-file-for-fake-audio-capture=/Users/krisjanisalbergs/Desktop/AV_course/AVCourse/call.wav", "use-file-for-fake-video-capture=/Users/krisjanisalbergs/Desktop/AV_automation_2022_autumn/AV_junior_albergs/output.mjpeg"]}
+[INFO] [20221114-184322]: Chrome Options: {"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "use-file-for-fake-audio-capture=/Users/call.wav"]}
+[INFO] [20221114-184324]: Starting main case OpenViduCall
+[DEBUG] [20221114-184324]: Case 'OpenViduCall': adding case 'I join to the call' for role desktopChrome
+[DEBUG] [20221114-184324]: Adding var: USERNAME = Peteris
+[DEBUG] [20221114-184324]: Case 'I join to the call': adding sequential action: 'navigate' 
+[DEBUG] [20221114-184324]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-184324]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-184324]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-184325]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-184325]: Case 'I join to the call': adding sequential action: 'click' 
+[INFO] [20221114-184325]: Role: 'desktopChrome', Action: 'navigate', Value: 'https://demos.openvidu.io/basic-videoconference/'
+[INFO] [20221114-184327]: Role: 'desktopChrome', Action: 'clear_field', Element: 'css:#userName'
+[INFO] [20221114-184327]: Role: 'desktopChrome', Action: 'send_keys', Element: 'css:#userName', Value: 'Peteris'
+[INFO] [20221114-184327]: desktopChrome: Sending keys: $AND_CLI_USERNAME$
+[INFO] [20221114-184328]: Role: 'desktopChrome', Action: 'clear_field', Element: 'css:#sessionId'
+[INFO] [20221114-184328]: Role: 'desktopChrome', Action: 'send_keys', Element: 'css:#sessionId', Value: 'OurMeeting123'
+[INFO] [20221114-184328]: desktopChrome: Sending keys: $AND_CLI_SESSION$
+[INFO] [20221114-184328]: Role: 'desktopChrome', Action: 'click', Element: 'css:[value="Join!"]'
+[INFO] [20221114-184328]: Finished case I join to the call, resuming parent case OpenViduCall
+When I join to the call
+[DEBUG] [20221114-184328]: Case 'OpenViduCall': adding case 'I join to the call' for role desktopChrome1
+[DEBUG] [20221114-184328]: Adding var: USERNAME = Anna
+[DEBUG] [20221114-184328]: Case 'I join to the call': adding sequential action: 'navigate' 
+[DEBUG] [20221114-184328]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-184328]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-184328]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-184328]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-184328]: Case 'I join to the call': adding sequential action: 'click' 
+[INFO] [20221114-184328]: Role: 'desktopChrome1', Action: 'navigate', Value: 'https://demos.openvidu.io/basic-videoconference/'
+[INFO] [20221114-184331]: Role: 'desktopChrome1', Action: 'clear_field', Element: 'css:#userName'
+[INFO] [20221114-184331]: Role: 'desktopChrome1', Action: 'send_keys', Element: 'css:#userName', Value: 'Anna'
+[INFO] [20221114-184331]: desktopChrome1: Sending keys: $AND_CLI_USERNAME$
+[INFO] [20221114-184332]: Role: 'desktopChrome1', Action: 'clear_field', Element: 'css:#sessionId'
+[INFO] [20221114-184332]: Role: 'desktopChrome1', Action: 'send_keys', Element: 'css:#sessionId', Value: 'OurMeeting123'
+[INFO] [20221114-184332]: desktopChrome1: Sending keys: $AND_CLI_SESSION$
+[INFO] [20221114-184332]: Role: 'desktopChrome1', Action: 'click', Element: 'css:[value="Join!"]'
+[INFO] [20221114-184332]: Finished case I join to the call, resuming parent case OpenViduCall
+And I join to the call
+[DEBUG] [20221114-184332]: Case 'OpenViduCall': adding sequential action: 'sleep' 
+[INFO] [20221114-184332]: Role: 'desktopChrome', Action: 'sleep', Time: '10'
+[INFO] [20221114-184342]: All cases have finished
+================================================================================
+[INFO] [20221114-184342]: Finished Case Execution for 'OpenViduCall'
+================================================================================
+[INFO] [20221114-184342]: Stopping Appium drivers and servers...
+[INFO] [20221114-184342]: Role 'desktopChrome': Stopping Selenium driver... 
+Done!
+
+[INFO] [20221114-184342]: Role 'desktopChrome1': Stopping Selenium driver... 
+Done!
+
+[DEBUG] [20221114-184423]: Found roles: ["desktopChrome", "desktopChrome1"]
+[INFO] [20221114-184423]: Starting creation and configuration of role handlers...
+[DEBUG] [20221114-184423]: Creating handler for case role 'desktopChrome'...
+[INFO] [20221114-184423]: Role 'desktopChrome': Adding capabilities from case: {"chromeOptions"=>{"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "no-sandbox", "use-file-for-fake-audio-capture=/Users/krisjanisalbergs/Desktop/AV_automation_2022_autumn/AV_junior_albergs/call.wav", "use-file-for-fake-video-capture=/Users/krisjanisalbergs/Desktop/AV_automation_2022_autumn/AV_junior_albergs/output.mjpeg"]}}
+[DEBUG] [20221114-184423]: Created handler for case role 'desktopChrome'
+[DEBUG] [20221114-184423]: Creating handler for case role 'desktopChrome1'...
+[INFO] [20221114-184423]: Role 'desktopChrome1': Adding capabilities from case: {"chromeOptions"=>{"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "use-file-for-fake-audio-capture=/Users/call.wav"]}}
+[DEBUG] [20221114-184423]: Created handler for case role 'desktopChrome1'
+[INFO] [20221114-184423]: All role handlers created and fully configured!
+[INFO] [20221114-184423]: Chrome Options: {"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "no-sandbox", "use-file-for-fake-audio-capture=/Users/krisjanisalbergs/Desktop/AV_automation_2022_autumn/AV_junior_albergs/call.wav", "use-file-for-fake-video-capture=/Users/krisjanisalbergs/Desktop/AV_automation_2022_autumn/AV_junior_albergs/output.mjpeg"]}
+[INFO] [20221114-184425]: Chrome Options: {"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "use-file-for-fake-audio-capture=/Users/call.wav"]}
+[INFO] [20221114-184428]: Starting main case OpenViduCall
+[DEBUG] [20221114-184428]: Case 'OpenViduCall': adding case 'I join to the call' for role desktopChrome
+[DEBUG] [20221114-184428]: Adding var: USERNAME = Peteris
+[DEBUG] [20221114-184428]: Case 'I join to the call': adding sequential action: 'navigate' 
+[DEBUG] [20221114-184428]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-184428]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-184428]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-184428]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-184428]: Case 'I join to the call': adding sequential action: 'click' 
+[INFO] [20221114-184428]: Role: 'desktopChrome', Action: 'navigate', Value: 'https://demos.openvidu.io/basic-videoconference/'
+[INFO] [20221114-184431]: Role: 'desktopChrome', Action: 'clear_field', Element: 'css:#userName'
+[INFO] [20221114-184431]: Role: 'desktopChrome', Action: 'send_keys', Element: 'css:#userName', Value: 'Peteris'
+[INFO] [20221114-184431]: desktopChrome: Sending keys: $AND_CLI_USERNAME$
+[INFO] [20221114-184431]: Role: 'desktopChrome', Action: 'clear_field', Element: 'css:#sessionId'
+[INFO] [20221114-184431]: Role: 'desktopChrome', Action: 'send_keys', Element: 'css:#sessionId', Value: 'OurMeeting123'
+[INFO] [20221114-184431]: desktopChrome: Sending keys: $AND_CLI_SESSION$
+[INFO] [20221114-184432]: Role: 'desktopChrome', Action: 'click', Element: 'css:[value="Join!"]'
+[INFO] [20221114-184432]: Finished case I join to the call, resuming parent case OpenViduCall
+When I join to the call
+[DEBUG] [20221114-184432]: Case 'OpenViduCall': adding case 'I join to the call' for role desktopChrome1
+[DEBUG] [20221114-184432]: Adding var: USERNAME = Anna
+[DEBUG] [20221114-184432]: Case 'I join to the call': adding sequential action: 'navigate' 
+[DEBUG] [20221114-184432]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-184432]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-184432]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-184432]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-184432]: Case 'I join to the call': adding sequential action: 'click' 
+[INFO] [20221114-184432]: Role: 'desktopChrome1', Action: 'navigate', Value: 'https://demos.openvidu.io/basic-videoconference/'
+[INFO] [20221114-184435]: Role: 'desktopChrome1', Action: 'clear_field', Element: 'css:#userName'
+[INFO] [20221114-184435]: Role: 'desktopChrome1', Action: 'send_keys', Element: 'css:#userName', Value: 'Anna'
+[INFO] [20221114-184435]: desktopChrome1: Sending keys: $AND_CLI_USERNAME$
+[INFO] [20221114-184435]: Role: 'desktopChrome1', Action: 'clear_field', Element: 'css:#sessionId'
+[INFO] [20221114-184435]: Role: 'desktopChrome1', Action: 'send_keys', Element: 'css:#sessionId', Value: 'OurMeeting123'
+[INFO] [20221114-184435]: desktopChrome1: Sending keys: $AND_CLI_SESSION$
+[INFO] [20221114-184435]: Role: 'desktopChrome1', Action: 'click', Element: 'css:[value="Join!"]'
+[INFO] [20221114-184435]: Finished case I join to the call, resuming parent case OpenViduCall
+And I join to the call
+[DEBUG] [20221114-184435]: Case 'OpenViduCall': adding sequential action: 'sleep' 
+[INFO] [20221114-184435]: Role: 'desktopChrome', Action: 'sleep', Time: '10'
+[INFO] [20221114-184445]: All cases have finished
+================================================================================
+[INFO] [20221114-184445]: Finished Case Execution for 'OpenViduCall'
+================================================================================
+[INFO] [20221114-184445]: Stopping Appium drivers and servers...
+[INFO] [20221114-184445]: Role 'desktopChrome': Stopping Selenium driver... 
+Done!
+
+[INFO] [20221114-184446]: Role 'desktopChrome1': Stopping Selenium driver... 
+Done!
+
+[DEBUG] [20221114-184849]: Found roles: ["desktopChrome", "desktopChrome1"]
+[INFO] [20221114-184849]: Starting creation and configuration of role handlers...
+[DEBUG] [20221114-184849]: Creating handler for case role 'desktopChrome'...
+[INFO] [20221114-184849]: Role 'desktopChrome': Adding capabilities from case: {"chromeOptions"=>{"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "no-sandbox", "use-file-for-fake-audio-capture=/Users/krisjanisalbergs/Desktop/AV_automation_2022_autumn/AV_junior_albergs/call.wav", "use-file-for-fake-video-capture=/Users/krisjanisalbergs/Desktop/AV_automation_2022_autumn/AV_junior_albergs/output.mjpeg"]}}
+[DEBUG] [20221114-184849]: Created handler for case role 'desktopChrome'
+[DEBUG] [20221114-184849]: Creating handler for case role 'desktopChrome1'...
+[INFO] [20221114-184849]: Role 'desktopChrome1': Adding capabilities from case: {"chromeOptions"=>{"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "use-file-for-fake-audio-capture=/Users/call.wav"]}}
+[DEBUG] [20221114-184849]: Created handler for case role 'desktopChrome1'
+[INFO] [20221114-184849]: All role handlers created and fully configured!
+[INFO] [20221114-184849]: Chrome Options: {"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "no-sandbox", "use-file-for-fake-audio-capture=/Users/krisjanisalbergs/Desktop/AV_automation_2022_autumn/AV_junior_albergs/call.wav", "use-file-for-fake-video-capture=/Users/krisjanisalbergs/Desktop/AV_automation_2022_autumn/AV_junior_albergs/output.mjpeg"]}
+[INFO] [20221114-184851]: Chrome Options: {"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "use-file-for-fake-audio-capture=/Users/call.wav"]}
+[INFO] [20221114-184853]: Starting main case OpenViduCall
+[DEBUG] [20221114-184853]: Case 'OpenViduCall': adding case 'I join to the call' for role desktopChrome
+[DEBUG] [20221114-184853]: Adding var: USERNAME = Peteris
+[DEBUG] [20221114-184853]: Case 'I join to the call': adding sequential action: 'navigate' 
+[DEBUG] [20221114-184853]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-184853]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-184853]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-184853]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-184853]: Case 'I join to the call': adding sequential action: 'click' 
+[INFO] [20221114-184853]: Role: 'desktopChrome', Action: 'navigate', Value: 'https://demos.openvidu.io/basic-videoconference/'
+[INFO] [20221114-184855]: Role: 'desktopChrome', Action: 'clear_field', Element: 'css:#userName'
+[INFO] [20221114-184855]: Role: 'desktopChrome', Action: 'send_keys', Element: 'css:#userName', Value: 'Peteris'
+[INFO] [20221114-184855]: desktopChrome: Sending keys: $AND_CLI_USERNAME$
+[INFO] [20221114-184856]: Role: 'desktopChrome', Action: 'clear_field', Element: 'css:#sessionId'
+[INFO] [20221114-184856]: Role: 'desktopChrome', Action: 'send_keys', Element: 'css:#sessionId', Value: 'OurMeeting123'
+[INFO] [20221114-184856]: desktopChrome: Sending keys: $AND_CLI_SESSION$
+[INFO] [20221114-184856]: Role: 'desktopChrome', Action: 'click', Element: 'css:[value="Join!"]'
+[INFO] [20221114-184856]: Finished case I join to the call, resuming parent case OpenViduCall
+When I join to the call
+[DEBUG] [20221114-184856]: Case 'OpenViduCall': adding case 'I join to the call' for role desktopChrome1
+[DEBUG] [20221114-184856]: Adding var: USERNAME = Anna
+[DEBUG] [20221114-184856]: Case 'I join to the call': adding sequential action: 'navigate' 
+[DEBUG] [20221114-184856]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-184856]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-184856]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-184856]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-184856]: Case 'I join to the call': adding sequential action: 'click' 
+[INFO] [20221114-184856]: Role: 'desktopChrome1', Action: 'navigate', Value: 'https://demos.openvidu.io/basic-videoconference/'
+[INFO] [20221114-184858]: Role: 'desktopChrome1', Action: 'clear_field', Element: 'css:#userName'
+[INFO] [20221114-184858]: Role: 'desktopChrome1', Action: 'send_keys', Element: 'css:#userName', Value: 'Anna'
+[INFO] [20221114-184858]: desktopChrome1: Sending keys: $AND_CLI_USERNAME$
+[INFO] [20221114-184859]: Role: 'desktopChrome1', Action: 'clear_field', Element: 'css:#sessionId'
+[INFO] [20221114-184859]: Role: 'desktopChrome1', Action: 'send_keys', Element: 'css:#sessionId', Value: 'OurMeeting123'
+[INFO] [20221114-184859]: desktopChrome1: Sending keys: $AND_CLI_SESSION$
+[INFO] [20221114-184859]: Role: 'desktopChrome1', Action: 'click', Element: 'css:[value="Join!"]'
+[INFO] [20221114-184859]: Finished case I join to the call, resuming parent case OpenViduCall
+And I join to the call
+[DEBUG] [20221114-184859]: Case 'OpenViduCall': adding sequential action: 'sleep' 
+[INFO] [20221114-184859]: Role: 'desktopChrome', Action: 'sleep', Time: '10'
+[INFO] [20221114-184909]: All cases have finished
+================================================================================
+[INFO] [20221114-184909]: Finished Case Execution for 'OpenViduCall'
+================================================================================
+[INFO] [20221114-184909]: Stopping Appium drivers and servers...
+[INFO] [20221114-184909]: Role 'desktopChrome': Stopping Selenium driver... 
+Done!
+
+[INFO] [20221114-184909]: Role 'desktopChrome1': Stopping Selenium driver... 
+Done!
+
+[DEBUG] [20221114-185207]: Found roles: ["desktopChrome", "desktopChrome1", "desktopChrome2"]
+[INFO] [20221114-185207]: Starting creation and configuration of role handlers...
+[DEBUG] [20221114-185207]: Creating handler for case role 'desktopChrome'...
+[INFO] [20221114-185207]: Role 'desktopChrome': Adding capabilities from case: {"chromeOptions"=>{"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "no-sandbox", "use-file-for-fake-audio-capture=/Users/krisjanisalbergs/Desktop/AV_automation_2022_autumn/AV_junior_albergs/call.wav", "use-file-for-fake-video-capture=/Users/krisjanisalbergs/Desktop/AV_automation_2022_autumn/AV_junior_albergs/output.mjpeg"]}}
+[DEBUG] [20221114-185207]: Created handler for case role 'desktopChrome'
+[DEBUG] [20221114-185207]: Creating handler for case role 'desktopChrome1'...
+[INFO] [20221114-185207]: Role 'desktopChrome1': Adding capabilities from case: {"chromeOptions"=>{"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "use-file-for-fake-audio-capture=/Users/call.wav"]}}
+[DEBUG] [20221114-185207]: Created handler for case role 'desktopChrome1'
+[DEBUG] [20221114-185207]: Creating handler for case role 'desktopChrome2'...
+[INFO] [20221114-185207]: Role 'desktopChrome2': Adding capabilities from case: {"chromeOptions"=>{"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "use-file-for-fake-audio-capture=/Users/call.wav"]}}
+[DEBUG] [20221114-185207]: Created handler for case role 'desktopChrome2'
+[INFO] [20221114-185207]: All role handlers created and fully configured!
+[INFO] [20221114-185207]: Chrome Options: {"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "no-sandbox", "use-file-for-fake-audio-capture=/Users/krisjanisalbergs/Desktop/AV_automation_2022_autumn/AV_junior_albergs/call.wav", "use-file-for-fake-video-capture=/Users/krisjanisalbergs/Desktop/AV_automation_2022_autumn/AV_junior_albergs/output.mjpeg"]}
+[INFO] [20221114-185209]: Chrome Options: {"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "use-file-for-fake-audio-capture=/Users/call.wav"]}
+[INFO] [20221114-185212]: Chrome Options: {"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "use-file-for-fake-audio-capture=/Users/call.wav"]}
+[INFO] [20221114-185214]: Starting main case OpenViduCall
+[DEBUG] [20221114-185214]: Case 'OpenViduCall': adding case 'I join to the call' for role desktopChrome
+[DEBUG] [20221114-185214]: Adding var: USERNAME = Peteris
+[DEBUG] [20221114-185214]: Case 'I join to the call': adding sequential action: 'navigate' 
+[DEBUG] [20221114-185214]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-185214]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-185214]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-185214]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-185214]: Case 'I join to the call': adding sequential action: 'click' 
+[INFO] [20221114-185214]: Role: 'desktopChrome', Action: 'navigate', Value: 'https://demos.openvidu.io/basic-videoconference/'
+[INFO] [20221114-185217]: Role: 'desktopChrome', Action: 'clear_field', Element: 'css:#userName'
+[INFO] [20221114-185217]: Role: 'desktopChrome', Action: 'send_keys', Element: 'css:#userName', Value: 'Peteris'
+[INFO] [20221114-185217]: desktopChrome: Sending keys: $AND_CLI_USERNAME$
+[INFO] [20221114-185217]: Role: 'desktopChrome', Action: 'clear_field', Element: 'css:#sessionId'
+[INFO] [20221114-185218]: Role: 'desktopChrome', Action: 'send_keys', Element: 'css:#sessionId', Value: 'OurMeeting123'
+[INFO] [20221114-185218]: desktopChrome: Sending keys: $AND_CLI_SESSION$
+[INFO] [20221114-185218]: Role: 'desktopChrome', Action: 'click', Element: 'css:[value="Join!"]'
+[INFO] [20221114-185218]: Finished case I join to the call, resuming parent case OpenViduCall
+When I join to the call
+[DEBUG] [20221114-185218]: Case 'OpenViduCall': adding case 'I join to the call' for role desktopChrome1
+[DEBUG] [20221114-185218]: Adding var: USERNAME = Anna
+[DEBUG] [20221114-185218]: Case 'I join to the call': adding sequential action: 'navigate' 
+[DEBUG] [20221114-185218]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-185218]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-185218]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-185218]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-185218]: Case 'I join to the call': adding sequential action: 'click' 
+[INFO] [20221114-185218]: Role: 'desktopChrome1', Action: 'navigate', Value: 'https://demos.openvidu.io/basic-videoconference/'
+[INFO] [20221114-185221]: Role: 'desktopChrome1', Action: 'clear_field', Element: 'css:#userName'
+[INFO] [20221114-185221]: Role: 'desktopChrome1', Action: 'send_keys', Element: 'css:#userName', Value: 'Anna'
+[INFO] [20221114-185221]: desktopChrome1: Sending keys: $AND_CLI_USERNAME$
+[INFO] [20221114-185221]: Role: 'desktopChrome1', Action: 'clear_field', Element: 'css:#sessionId'
+[INFO] [20221114-185221]: Role: 'desktopChrome1', Action: 'send_keys', Element: 'css:#sessionId', Value: 'OurMeeting123'
+[INFO] [20221114-185221]: desktopChrome1: Sending keys: $AND_CLI_SESSION$
+[INFO] [20221114-185221]: Role: 'desktopChrome1', Action: 'click', Element: 'css:[value="Join!"]'
+[INFO] [20221114-185222]: Finished case I join to the call, resuming parent case OpenViduCall
+And I join to the call
+[DEBUG] [20221114-185222]: Case 'OpenViduCall': adding case 'I join to the call' for role desktopChrome2
+[DEBUG] [20221114-185222]: Adding var: USERNAME = Amigos
+[DEBUG] [20221114-185222]: Case 'I join to the call': adding sequential action: 'navigate' 
+[DEBUG] [20221114-185222]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-185222]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-185222]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-185222]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-185222]: Case 'I join to the call': adding sequential action: 'click' 
+[INFO] [20221114-185222]: Role: 'desktopChrome2', Action: 'navigate', Value: 'https://demos.openvidu.io/basic-videoconference/'
+[INFO] [20221114-185226]: Role: 'desktopChrome2', Action: 'clear_field', Element: 'css:#userName'
+[INFO] [20221114-185226]: Role: 'desktopChrome2', Action: 'send_keys', Element: 'css:#userName', Value: 'Amigos'
+[INFO] [20221114-185226]: desktopChrome2: Sending keys: $AND_CLI_USERNAME$
+[INFO] [20221114-185226]: Role: 'desktopChrome2', Action: 'clear_field', Element: 'css:#sessionId'
+[INFO] [20221114-185227]: Role: 'desktopChrome2', Action: 'send_keys', Element: 'css:#sessionId', Value: 'OurMeeting123'
+[INFO] [20221114-185227]: desktopChrome2: Sending keys: $AND_CLI_SESSION$
+[INFO] [20221114-185227]: Role: 'desktopChrome2', Action: 'click', Element: 'css:[value="Join!"]'
+[INFO] [20221114-185227]: Finished case I join to the call, resuming parent case OpenViduCall
+And I join to the call
+[DEBUG] [20221114-185227]: Case 'OpenViduCall': adding sequential action: 'sleep' 
+[INFO] [20221114-185227]: Role: 'desktopChrome', Action: 'sleep', Time: '10'
+[INFO] [20221114-185237]: All cases have finished
+================================================================================
+[INFO] [20221114-185237]: Finished Case Execution for 'OpenViduCall'
+================================================================================
+[INFO] [20221114-185237]: Stopping Appium drivers and servers...
+[INFO] [20221114-185237]: Role 'desktopChrome': Stopping Selenium driver... 
+Done!
+
+[INFO] [20221114-185237]: Role 'desktopChrome1': Stopping Selenium driver... 
+Done!
+
+[INFO] [20221114-185237]: Role 'desktopChrome2': Stopping Selenium driver... 
+Done!
+
+[DEBUG] [20221114-185438]: Found roles: ["desktopChrome", "desktopChrome1", "desktopChrome2"]
+[INFO] [20221114-185438]: Starting creation and configuration of role handlers...
+[DEBUG] [20221114-185438]: Creating handler for case role 'desktopChrome'...
+[INFO] [20221114-185438]: Role 'desktopChrome': Adding capabilities from case: {"chromeOptions"=>{"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "no-sandbox", "use-file-for-fake-audio-capture=/Users/krisjanisalbergs/Desktop/AV_automation_2022_autumn/AV_junior_albergs/call.wav", "use-file-for-fake-video-capture=/Users/krisjanisalbergs/Desktop/AV_automation_2022_autumn/AV_junior_albergs/output.mjpeg"]}}
+[DEBUG] [20221114-185438]: Created handler for case role 'desktopChrome'
+[DEBUG] [20221114-185438]: Creating handler for case role 'desktopChrome1'...
+[INFO] [20221114-185438]: Role 'desktopChrome1': Adding capabilities from case: {"chromeOptions"=>{"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "use-file-for-fake-audio-capture=/Users/call.wav"]}}
+[DEBUG] [20221114-185438]: Created handler for case role 'desktopChrome1'
+[DEBUG] [20221114-185438]: Creating handler for case role 'desktopChrome2'...
+[INFO] [20221114-185438]: Role 'desktopChrome2': Adding capabilities from case: {"chromeOptions"=>{"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "use-file-for-fake-audio-capture=/Users/call.wav"]}}
+[DEBUG] [20221114-185438]: Created handler for case role 'desktopChrome2'
+[INFO] [20221114-185438]: All role handlers created and fully configured!
+[INFO] [20221114-185438]: Chrome Options: {"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "no-sandbox", "use-file-for-fake-audio-capture=/Users/krisjanisalbergs/Desktop/AV_automation_2022_autumn/AV_junior_albergs/call.wav", "use-file-for-fake-video-capture=/Users/krisjanisalbergs/Desktop/AV_automation_2022_autumn/AV_junior_albergs/output.mjpeg"]}
+[INFO] [20221114-185440]: Chrome Options: {"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "use-file-for-fake-audio-capture=/Users/call.wav"]}
+[INFO] [20221114-185442]: Chrome Options: {"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "use-file-for-fake-audio-capture=/Users/call.wav"]}
+[INFO] [20221114-185445]: Starting main case OpenViduCall
+[DEBUG] [20221114-185445]: Case 'OpenViduCall': adding case 'I join to the call' for role desktopChrome
+[DEBUG] [20221114-185445]: Adding var: USERNAME = Peteris
+[DEBUG] [20221114-185445]: Case 'I join to the call': adding sequential action: 'navigate' 
+[DEBUG] [20221114-185445]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-185445]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-185445]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-185445]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-185445]: Case 'I join to the call': adding sequential action: 'click' 
+[INFO] [20221114-185445]: Role: 'desktopChrome', Action: 'navigate', Value: 'https://demos.openvidu.io/basic-videoconference/'
+[INFO] [20221114-185448]: Role: 'desktopChrome', Action: 'clear_field', Element: 'css:#userName'
+[INFO] [20221114-185448]: Role: 'desktopChrome', Action: 'send_keys', Element: 'css:#userName', Value: 'Peteris'
+[INFO] [20221114-185448]: desktopChrome: Sending keys: $AND_CLI_USERNAME$
+[INFO] [20221114-185448]: Role: 'desktopChrome', Action: 'clear_field', Element: 'css:#sessionId'
+[INFO] [20221114-185448]: Role: 'desktopChrome', Action: 'send_keys', Element: 'css:#sessionId', Value: 'OurMeeting123'
+[INFO] [20221114-185448]: desktopChrome: Sending keys: $AND_CLI_SESSION$
+[INFO] [20221114-185449]: Role: 'desktopChrome', Action: 'click', Element: 'css:[value="Join!"]'
+[INFO] [20221114-185449]: Finished case I join to the call, resuming parent case OpenViduCall
+When I join to the call
+[DEBUG] [20221114-185449]: Case 'OpenViduCall': adding sequential action: 'maximize' for role desktopChrome
+[DEBUG] [20221114-185449]: Case 'OpenViduCall': adding case 'I join to the call' for role desktopChrome1
+[INFO] [20221114-185449]: Role: 'desktopChrome', Action: 'maximize', Value: ''
+[DEBUG] [20221114-185449]: Adding var: USERNAME = Anna
+[DEBUG] [20221114-185449]: Case 'I join to the call': adding sequential action: 'navigate' 
+[DEBUG] [20221114-185449]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-185449]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-185449]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-185449]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-185449]: Case 'I join to the call': adding sequential action: 'click' 
+[INFO] [20221114-185449]: Role: 'desktopChrome1', Action: 'navigate', Value: 'https://demos.openvidu.io/basic-videoconference/'
+[INFO] [20221114-185451]: Role: 'desktopChrome1', Action: 'clear_field', Element: 'css:#userName'
+[INFO] [20221114-185451]: Role: 'desktopChrome1', Action: 'send_keys', Element: 'css:#userName', Value: 'Anna'
+[INFO] [20221114-185451]: desktopChrome1: Sending keys: $AND_CLI_USERNAME$
+[INFO] [20221114-185451]: Role: 'desktopChrome1', Action: 'clear_field', Element: 'css:#sessionId'
+[INFO] [20221114-185451]: Role: 'desktopChrome1', Action: 'send_keys', Element: 'css:#sessionId', Value: 'OurMeeting123'
+[INFO] [20221114-185451]: desktopChrome1: Sending keys: $AND_CLI_SESSION$
+[INFO] [20221114-185451]: Role: 'desktopChrome1', Action: 'click', Element: 'css:[value="Join!"]'
+[INFO] [20221114-185452]: Finished case I join to the call, resuming parent case OpenViduCall
+And I join to the call
+[DEBUG] [20221114-185452]: Case 'OpenViduCall': adding case 'I join to the call' for role desktopChrome2
+[DEBUG] [20221114-185452]: Adding var: USERNAME = Amigos
+[DEBUG] [20221114-185452]: Case 'I join to the call': adding sequential action: 'navigate' 
+[DEBUG] [20221114-185452]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-185452]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-185452]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-185452]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-185452]: Case 'I join to the call': adding sequential action: 'click' 
+[INFO] [20221114-185452]: Role: 'desktopChrome2', Action: 'navigate', Value: 'https://demos.openvidu.io/basic-videoconference/'
+[INFO] [20221114-185454]: Role: 'desktopChrome2', Action: 'clear_field', Element: 'css:#userName'
+[INFO] [20221114-185454]: Role: 'desktopChrome2', Action: 'send_keys', Element: 'css:#userName', Value: 'Amigos'
+[INFO] [20221114-185454]: desktopChrome2: Sending keys: $AND_CLI_USERNAME$
+[INFO] [20221114-185454]: Role: 'desktopChrome2', Action: 'clear_field', Element: 'css:#sessionId'
+[INFO] [20221114-185454]: Role: 'desktopChrome2', Action: 'send_keys', Element: 'css:#sessionId', Value: 'OurMeeting123'
+[INFO] [20221114-185454]: desktopChrome2: Sending keys: $AND_CLI_SESSION$
+[INFO] [20221114-185454]: Role: 'desktopChrome2', Action: 'click', Element: 'css:[value="Join!"]'
+[INFO] [20221114-185455]: Finished case I join to the call, resuming parent case OpenViduCall
+And I join to the call
+[DEBUG] [20221114-185455]: Case 'OpenViduCall': adding sequential action: 'sleep' 
+[INFO] [20221114-185455]: Role: 'desktopChrome', Action: 'sleep', Time: '10'
+[INFO] [20221114-185505]: All cases have finished
+================================================================================
+[INFO] [20221114-185505]: Finished Case Execution for 'OpenViduCall'
+================================================================================
+[INFO] [20221114-185505]: Stopping Appium drivers and servers...
+[INFO] [20221114-185505]: Role 'desktopChrome': Stopping Selenium driver... 
+Done!
+
+[INFO] [20221114-185505]: Role 'desktopChrome1': Stopping Selenium driver... 
+Done!
+
+[INFO] [20221114-185505]: Role 'desktopChrome2': Stopping Selenium driver... 
+Done!
+
+[DEBUG] [20221114-185539]: Found roles: ["desktopChrome", "desktopChrome1", "desktopChrome2"]
+[INFO] [20221114-185539]: Starting creation and configuration of role handlers...
+[DEBUG] [20221114-185539]: Creating handler for case role 'desktopChrome'...
+[INFO] [20221114-185539]: Role 'desktopChrome': Adding capabilities from case: {"chromeOptions"=>{"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "no-sandbox", "use-file-for-fake-audio-capture=/Users/krisjanisalbergs/Desktop/AV_automation_2022_autumn/AV_junior_albergs/call.wav", "use-file-for-fake-video-capture=/Users/krisjanisalbergs/Desktop/AV_automation_2022_autumn/AV_junior_albergs/output.mjpeg"]}}
+[DEBUG] [20221114-185539]: Created handler for case role 'desktopChrome'
+[DEBUG] [20221114-185539]: Creating handler for case role 'desktopChrome1'...
+[INFO] [20221114-185539]: Role 'desktopChrome1': Adding capabilities from case: {"chromeOptions"=>{"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "use-file-for-fake-audio-capture=/Users/call.wav"]}}
+[DEBUG] [20221114-185539]: Created handler for case role 'desktopChrome1'
+[DEBUG] [20221114-185539]: Creating handler for case role 'desktopChrome2'...
+[INFO] [20221114-185539]: Role 'desktopChrome2': Adding capabilities from case: {"chromeOptions"=>{"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "use-file-for-fake-audio-capture=/Users/call.wav"]}}
+[DEBUG] [20221114-185539]: Created handler for case role 'desktopChrome2'
+[INFO] [20221114-185539]: All role handlers created and fully configured!
+[INFO] [20221114-185539]: Chrome Options: {"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "no-sandbox", "use-file-for-fake-audio-capture=/Users/krisjanisalbergs/Desktop/AV_automation_2022_autumn/AV_junior_albergs/call.wav", "use-file-for-fake-video-capture=/Users/krisjanisalbergs/Desktop/AV_automation_2022_autumn/AV_junior_albergs/output.mjpeg"]}
+[INFO] [20221114-185541]: Chrome Options: {"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "use-file-for-fake-audio-capture=/Users/call.wav"]}
+[INFO] [20221114-185543]: Chrome Options: {"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "use-file-for-fake-audio-capture=/Users/call.wav"]}
+[INFO] [20221114-185545]: Starting main case OpenViduCall
+[DEBUG] [20221114-185545]: Case 'OpenViduCall': adding case 'I join to the call' for role desktopChrome
+[DEBUG] [20221114-185545]: Adding var: USERNAME = Peteris
+[DEBUG] [20221114-185545]: Case 'I join to the call': adding sequential action: 'navigate' 
+[DEBUG] [20221114-185545]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-185545]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-185545]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-185545]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-185545]: Case 'I join to the call': adding sequential action: 'click' 
+[INFO] [20221114-185545]: Role: 'desktopChrome', Action: 'navigate', Value: 'https://demos.openvidu.io/basic-videoconference/'
+[INFO] [20221114-185548]: Role: 'desktopChrome', Action: 'clear_field', Element: 'css:#userName'
+[INFO] [20221114-185548]: Role: 'desktopChrome', Action: 'send_keys', Element: 'css:#userName', Value: 'Peteris'
+[INFO] [20221114-185548]: desktopChrome: Sending keys: $AND_CLI_USERNAME$
+[INFO] [20221114-185548]: Role: 'desktopChrome', Action: 'clear_field', Element: 'css:#sessionId'
+[INFO] [20221114-185548]: Role: 'desktopChrome', Action: 'send_keys', Element: 'css:#sessionId', Value: 'OurMeeting123'
+[INFO] [20221114-185548]: desktopChrome: Sending keys: $AND_CLI_SESSION$
+[INFO] [20221114-185548]: Role: 'desktopChrome', Action: 'click', Element: 'css:[value="Join!"]'
+[INFO] [20221114-185548]: Finished case I join to the call, resuming parent case OpenViduCall
+When I join to the call
+[DEBUG] [20221114-185548]: Case 'OpenViduCall': adding sequential action: 'maximize' for role desktopChrome
+[DEBUG] [20221114-185548]: Case 'OpenViduCall': adding case 'I join to the call' for role desktopChrome1
+[INFO] [20221114-185548]: Role: 'desktopChrome', Action: 'maximize', Value: ''
+[DEBUG] [20221114-185548]: Adding var: USERNAME = Anna
+[DEBUG] [20221114-185548]: Case 'I join to the call': adding sequential action: 'navigate' 
+[DEBUG] [20221114-185548]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-185548]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-185548]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-185548]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-185548]: Case 'I join to the call': adding sequential action: 'click' 
+[INFO] [20221114-185548]: Role: 'desktopChrome1', Action: 'navigate', Value: 'https://demos.openvidu.io/basic-videoconference/'
+[INFO] [20221114-185551]: Role: 'desktopChrome1', Action: 'clear_field', Element: 'css:#userName'
+[INFO] [20221114-185551]: Role: 'desktopChrome1', Action: 'send_keys', Element: 'css:#userName', Value: 'Anna'
+[INFO] [20221114-185551]: desktopChrome1: Sending keys: $AND_CLI_USERNAME$
+[INFO] [20221114-185551]: Role: 'desktopChrome1', Action: 'clear_field', Element: 'css:#sessionId'
+[INFO] [20221114-185551]: Role: 'desktopChrome1', Action: 'send_keys', Element: 'css:#sessionId', Value: 'OurMeeting123'
+[INFO] [20221114-185551]: desktopChrome1: Sending keys: $AND_CLI_SESSION$
+[INFO] [20221114-185551]: Role: 'desktopChrome1', Action: 'click', Element: 'css:[value="Join!"]'
+[INFO] [20221114-185551]: Finished case I join to the call, resuming parent case OpenViduCall
+And I join to the call
+[DEBUG] [20221114-185551]: Case 'OpenViduCall': adding case 'I join to the call' for role desktopChrome2
+[DEBUG] [20221114-185551]: Adding var: USERNAME = Amigos
+[DEBUG] [20221114-185551]: Case 'I join to the call': adding sequential action: 'navigate' 
+[DEBUG] [20221114-185551]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-185551]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-185551]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-185551]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-185551]: Case 'I join to the call': adding sequential action: 'click' 
+[INFO] [20221114-185551]: Role: 'desktopChrome2', Action: 'navigate', Value: 'https://demos.openvidu.io/basic-videoconference/'
+[INFO] [20221114-185554]: Role: 'desktopChrome2', Action: 'clear_field', Element: 'css:#userName'
+[INFO] [20221114-185554]: Role: 'desktopChrome2', Action: 'send_keys', Element: 'css:#userName', Value: 'Amigos'
+[INFO] [20221114-185554]: desktopChrome2: Sending keys: $AND_CLI_USERNAME$
+[INFO] [20221114-185554]: Role: 'desktopChrome2', Action: 'clear_field', Element: 'css:#sessionId'
+[INFO] [20221114-185554]: Role: 'desktopChrome2', Action: 'send_keys', Element: 'css:#sessionId', Value: 'OurMeeting123'
+[INFO] [20221114-185554]: desktopChrome2: Sending keys: $AND_CLI_SESSION$
+[INFO] [20221114-185554]: Role: 'desktopChrome2', Action: 'click', Element: 'css:[value="Join!"]'
+[INFO] [20221114-185554]: Finished case I join to the call, resuming parent case OpenViduCall
+And I join to the call
+[DEBUG] [20221114-185554]: Case 'OpenViduCall': adding sequential action: 'sleep' 
+[INFO] [20221114-185554]: Role: 'desktopChrome', Action: 'sleep', Time: '10'
+[INFO] [20221114-185604]: All cases have finished
+================================================================================
+[INFO] [20221114-185604]: Finished Case Execution for 'OpenViduCall'
+================================================================================
+[INFO] [20221114-185604]: Stopping Appium drivers and servers...
+[INFO] [20221114-185604]: Role 'desktopChrome': Stopping Selenium driver... 
+Done!
+
+[INFO] [20221114-185605]: Role 'desktopChrome1': Stopping Selenium driver... 
+Done!
+
+[INFO] [20221114-185605]: Role 'desktopChrome2': Stopping Selenium driver... 
+Done!
+
+[DEBUG] [20221114-185712]: Found roles: ["desktopChrome", "desktopChrome1", "desktopChrome2"]
+[INFO] [20221114-185712]: Starting creation and configuration of role handlers...
+[DEBUG] [20221114-185712]: Creating handler for case role 'desktopChrome'...
+[INFO] [20221114-185712]: Role 'desktopChrome': Adding capabilities from case: {"chromeOptions"=>{"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "no-sandbox", "use-file-for-fake-audio-capture=/Users/krisjanisalbergs/Desktop/AV_automation_2022_autumn/AV_junior_albergs/call.wav", "use-file-for-fake-video-capture=/Users/krisjanisalbergs/Desktop/AV_automation_2022_autumn/AV_junior_albergs/output.mjpeg"]}}
+[DEBUG] [20221114-185712]: Created handler for case role 'desktopChrome'
+[DEBUG] [20221114-185712]: Creating handler for case role 'desktopChrome1'...
+[INFO] [20221114-185712]: Role 'desktopChrome1': Adding capabilities from case: {"chromeOptions"=>{"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "use-file-for-fake-audio-capture=/Users/call.wav"]}}
+[DEBUG] [20221114-185712]: Created handler for case role 'desktopChrome1'
+[DEBUG] [20221114-185712]: Creating handler for case role 'desktopChrome2'...
+[INFO] [20221114-185712]: Role 'desktopChrome2': Adding capabilities from case: {"chromeOptions"=>{"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "use-file-for-fake-audio-capture=/Users/call.wav"]}}
+[DEBUG] [20221114-185712]: Created handler for case role 'desktopChrome2'
+[INFO] [20221114-185712]: All role handlers created and fully configured!
+[INFO] [20221114-185712]: Chrome Options: {"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "no-sandbox", "use-file-for-fake-audio-capture=/Users/krisjanisalbergs/Desktop/AV_automation_2022_autumn/AV_junior_albergs/call.wav", "use-file-for-fake-video-capture=/Users/krisjanisalbergs/Desktop/AV_automation_2022_autumn/AV_junior_albergs/output.mjpeg"]}
+[INFO] [20221114-185714]: Chrome Options: {"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "use-file-for-fake-audio-capture=/Users/call.wav"]}
+[INFO] [20221114-185716]: Chrome Options: {"args"=>["use-fake-ui-for-media-stream", "use-fake-device-for-media-stream", "use-file-for-fake-audio-capture=/Users/call.wav"]}
+[INFO] [20221114-185718]: Starting main case OpenViduCall
+[DEBUG] [20221114-185718]: Case 'OpenViduCall': adding case 'I join to the call' for role desktopChrome
+[DEBUG] [20221114-185718]: Adding var: USERNAME = Peteris
+[DEBUG] [20221114-185718]: Case 'I join to the call': adding sequential action: 'navigate' 
+[DEBUG] [20221114-185718]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-185718]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-185718]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-185718]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-185718]: Case 'I join to the call': adding sequential action: 'click' 
+[INFO] [20221114-185718]: Role: 'desktopChrome', Action: 'navigate', Value: 'https://demos.openvidu.io/basic-videoconference/'
+[INFO] [20221114-185721]: Role: 'desktopChrome', Action: 'clear_field', Element: 'css:#userName'
+[INFO] [20221114-185721]: Role: 'desktopChrome', Action: 'send_keys', Element: 'css:#userName', Value: 'Peteris'
+[INFO] [20221114-185721]: desktopChrome: Sending keys: $AND_CLI_USERNAME$
+[INFO] [20221114-185721]: Role: 'desktopChrome', Action: 'clear_field', Element: 'css:#sessionId'
+[INFO] [20221114-185721]: Role: 'desktopChrome', Action: 'send_keys', Element: 'css:#sessionId', Value: 'OurMeeting123'
+[INFO] [20221114-185721]: desktopChrome: Sending keys: $AND_CLI_SESSION$
+[INFO] [20221114-185721]: Role: 'desktopChrome', Action: 'click', Element: 'css:[value="Join!"]'
+[INFO] [20221114-185722]: Finished case I join to the call, resuming parent case OpenViduCall
+When I join to the call
+[DEBUG] [20221114-185722]: Case 'OpenViduCall': adding case 'I join to the call' for role desktopChrome1
+[DEBUG] [20221114-185722]: Adding var: USERNAME = Anna
+[DEBUG] [20221114-185722]: Case 'I join to the call': adding sequential action: 'navigate' 
+[DEBUG] [20221114-185722]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-185722]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-185722]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-185722]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-185722]: Case 'I join to the call': adding sequential action: 'click' 
+[INFO] [20221114-185722]: Role: 'desktopChrome1', Action: 'navigate', Value: 'https://demos.openvidu.io/basic-videoconference/'
+[INFO] [20221114-185724]: Role: 'desktopChrome1', Action: 'clear_field', Element: 'css:#userName'
+[INFO] [20221114-185724]: Role: 'desktopChrome1', Action: 'send_keys', Element: 'css:#userName', Value: 'Anna'
+[INFO] [20221114-185724]: desktopChrome1: Sending keys: $AND_CLI_USERNAME$
+[INFO] [20221114-185724]: Role: 'desktopChrome1', Action: 'clear_field', Element: 'css:#sessionId'
+[INFO] [20221114-185724]: Role: 'desktopChrome1', Action: 'send_keys', Element: 'css:#sessionId', Value: 'OurMeeting123'
+[INFO] [20221114-185724]: desktopChrome1: Sending keys: $AND_CLI_SESSION$
+[INFO] [20221114-185725]: Role: 'desktopChrome1', Action: 'click', Element: 'css:[value="Join!"]'
+[INFO] [20221114-185725]: Finished case I join to the call, resuming parent case OpenViduCall
+And I join to the call
+[DEBUG] [20221114-185725]: Case 'OpenViduCall': adding case 'I join to the call' for role desktopChrome2
+[DEBUG] [20221114-185725]: Adding var: USERNAME = Amigos
+[DEBUG] [20221114-185725]: Case 'I join to the call': adding sequential action: 'navigate' 
+[DEBUG] [20221114-185725]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-185725]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-185725]: Case 'I join to the call': adding sequential action: 'clear_field' 
+[DEBUG] [20221114-185725]: Case 'I join to the call': adding sequential action: 'send_keys' 
+[DEBUG] [20221114-185725]: Case 'I join to the call': adding sequential action: 'click' 
+[INFO] [20221114-185725]: Role: 'desktopChrome2', Action: 'navigate', Value: 'https://demos.openvidu.io/basic-videoconference/'
+[INFO] [20221114-185728]: Role: 'desktopChrome2', Action: 'clear_field', Element: 'css:#userName'
+[INFO] [20221114-185728]: Role: 'desktopChrome2', Action: 'send_keys', Element: 'css:#userName', Value: 'Amigos'
+[INFO] [20221114-185728]: desktopChrome2: Sending keys: $AND_CLI_USERNAME$
+[INFO] [20221114-185728]: Role: 'desktopChrome2', Action: 'clear_field', Element: 'css:#sessionId'
+[INFO] [20221114-185728]: Role: 'desktopChrome2', Action: 'send_keys', Element: 'css:#sessionId', Value: 'OurMeeting123'
+[INFO] [20221114-185728]: desktopChrome2: Sending keys: $AND_CLI_SESSION$
+[INFO] [20221114-185728]: Role: 'desktopChrome2', Action: 'click', Element: 'css:[value="Join!"]'
+[INFO] [20221114-185729]: Finished case I join to the call, resuming parent case OpenViduCall
+And I join to the call
+[DEBUG] [20221114-185729]: Case 'OpenViduCall': adding sequential action: 'maximize' for role desktopChrome
+[DEBUG] [20221114-185729]: Case 'OpenViduCall': adding sequential action: 'minimize' for role desktopChrome1,desktopChrome2
+[DEBUG] [20221114-185729]: Case 'OpenViduCall': adding sequential action: 'sleep' 
+[INFO] [20221114-185729]: Role: 'desktopChrome', Action: 'maximize', Value: ''
+[INFO] [20221114-185729]: Role: 'desktopChrome1', Action: 'minimize', Value: ''
+[INFO] [20221114-185730]: Role: 'desktopChrome2', Action: 'minimize', Value: ''
+[INFO] [20221114-185730]: Role: 'desktopChrome', Action: 'sleep', Time: '10'
+[INFO] [20221114-185740]: All cases have finished
+================================================================================
+[INFO] [20221114-185740]: Finished Case Execution for 'OpenViduCall'
+================================================================================
+[INFO] [20221114-185740]: Stopping Appium drivers and servers...
+[INFO] [20221114-185740]: Role 'desktopChrome': Stopping Selenium driver... 
+Done!
+
+[INFO] [20221114-185741]: Role 'desktopChrome1': Stopping Selenium driver... 
+Done!
+
+[INFO] [20221114-185741]: Role 'desktopChrome2': Stopping Selenium driver... 
+Done!
+
