@@ -1,28 +1,17 @@
 OpenViduCall:
   Vars:
-    SESSION: "OurMeeting123"
+    SESSION: "OurMeeting124"
     USER1: "Peteris"
     USER2: "Anna"
     USER3: "Amigos"
+    TIME: 20
+    INTERFACE: "en0"
+    VIDEO_IN: 2
   Roles:
-    - Role: desktopChrome
-      Capabilities:
-        chromeOptions:
-          args:
-            - use-fake-ui-for-media-stream
-            - use-fake-device-for-media-stream
-            - no-sandbox
-            - use-file-for-fake-audio-capture=$AND_CMD_pwd$/call.wav
-            - use-file-for-fake-video-capture=$AND_CMD_pwd$/output.mjpeg
+    - Role: desktopChrome,desktopChrome1,desktopChrome2
       App: desktop
-    - Role: desktopChrome1,desktopChrome2
-      Capabilities:
-        chromeOptions:
-          args:
-            - use-fake-ui-for-media-stream
-            - use-fake-device-for-media-stream
-            - use-file-for-fake-audio-capture=/Users/call.wav
-      App: desktop
+    - Role: command1
+      App: command
   Actions:
     - When: I join to the call
       Role: desktopChrome
@@ -40,8 +29,8 @@ OpenViduCall:
       Role: desktopChrome
     - Type: minimize
       Role: desktopChrome1,desktopChrome2
-    - Type: sleep
-      Time: 10
+    - Then: I start recording audio, video and traces
+    - And: I start analysing audio, video and traces
 
     
     

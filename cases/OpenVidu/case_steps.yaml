@@ -20,3 +20,38 @@ JoinOpenViduCall:
     - Type: click
       Strategy: css
       Id: "[value=\"Join!\"]"
+
+Recordings:
+  Step: I start recording audio, video and traces
+  Roles:
+    - Role: command1
+      App: command
+  Actions:
+    - Type: command
+      Value: "tshark -Q -i \"$AND_CLI_INTERFACE$\" -w trace.pcapng -a duration:$AND_CLI_TIME$"
+      Detach: true
+    - Type: command
+      Value: "sox -q -r 44100 -t coreaudio \"default\" callDegraded.wav trim 0 $AND_CLI_TIME$"
+      Detach: true
+    - Type: command
+      Value: "ffmpeg -v quiet -y -f avfoundation -t $AND_CLI_TIME$ -i \"$AND_CLI_VIDEO_IN$:\" output.mkv"
+
+Analysis:
+  Step: I start analysing audio, video and traces
+  Roles:
+    - Role: command1
+      App: command
+  Actions:
+    - Type: command
+      Value: sox call.wav -b 16 call_16b.wav
+    - Type: command
+      Value: docker run --rm -v /$AND_CMD_pwd$/:/home alvarolaserna/visqol:1.0 ./visqol.sh /home/call_16b.wav /home/call_16b.wav
+      Greps:
+        - var: MOS_SCORE
+          condition: nempty
+          remove: "MOS-LQO:"
+          match: "MOS-LQO:(.*)"
+    - Type: command
+      Value: echo $AND_CLI_MOS_SCORE$ > mos.txt
+    - Type: command
+      Value: tshark -r trace.pcapng -qz io,stat,1 > trace.txt

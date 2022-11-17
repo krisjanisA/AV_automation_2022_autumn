@@ -13,8 +13,33 @@ Timeout: 15
 
 Devices:
   - role: command1,command2,command3
-  - role: desktopChrome,desktopChrome1,desktopChrome2
+  - role: desktopChrome
     browser: chrome
+    capabilities:
+        chromeOptions:
+          args:
+            - use-fake-ui-for-media-stream
+            - use-fake-device-for-media-stream
+            - no-sandbox
+            - use-file-for-fake-audio-capture=$AND_CMD_pwd$/call.wav
+            - use-file-for-fake-video-capture=$AND_CMD_pwd$/output.mjpeg
+  - role: desktopChrome1
+    browser: chrome
+    capabilities:
+        chromeOptions:
+          args:
+            - use-fake-ui-for-media-stream
+            - use-fake-device-for-media-stream
+            - use-file-for-fake-audio-capture=/Users/call.wav
+  - role: desktopChrome2
+    browser: chrome
+    capabilities:
+        chromeOptions:
+          args:
+            - use-fake-ui-for-media-stream
+            - use-fake-device-for-media-stream
+            - use-file-for-fake-audio-capture=/Users/call.wav
+            - mute-audio
   - role: desktopFirefox
     browser: firefox
   - role: desktopSafari
